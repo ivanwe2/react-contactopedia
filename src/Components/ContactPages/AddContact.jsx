@@ -11,9 +11,9 @@ class AddContact extends React.Component {
 
   handleAddContactFormSubmit = (e) => {
     e.preventDefault();
-    const name = e.target.elements.contactName.value.trim;
-    const email = e.target.elements.contactEmail.value.trim;
-    const phone = e.target.elements.contactPhone.value.trim;
+    const name = e.target.elements.contactName.value.trim();
+    const email = e.target.elements.contactEmail.value.trim();
+    const phone = e.target.elements.contactPhone.value.trim();
     this.props.handleAddContact({name: name, phone:phone, email: email});
   }
   render() {
